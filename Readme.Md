@@ -1,1 +1,1 @@
-This is Rust Website with Static File Html with Style With Tailwind CSS for styling
+This is Rust Landing Page Website with Static File Html with Style With Tailwind CSS for styling
