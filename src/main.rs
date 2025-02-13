@@ -7,10 +7,6 @@ use tower_http::services::ServeDir;
 
 #[tokio::main]
 async fn main() {
-    // old Router
-    // Buat router dengan satu route "/"
-    // let app = Router::new().route("/", get(handler));
-
     // Router hanya dengan ServeDir
     let app = Router::new().nest_service("/", ServeDir::new("static"));
 
@@ -24,8 +20,3 @@ async fn main() {
         .await
         .unwrap();
 }
-
-// Handler untuk route "/" from old Route
-// async fn handler() -> Html<&'static str> {
-//     Html("<b>Hello</b>, world! This is Isal speaking")
-// }
